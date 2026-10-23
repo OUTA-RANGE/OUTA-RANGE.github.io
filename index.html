@@ -2,13 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
 
 <body>
-    Hello world!
+	<h1>Hello world!</h1>
 </body>
 
 </html>
+
+<style>
+	:root {
+		--bg: #181818;
+		--tir-h: #242424;
+		--tir-s: #1f1f1f;
+	}
+
+	body {
+		background-color: var(--bg);
+		background-image:
+			linear-gradient(45deg, var(--tir-h) 25%, transparent 25%),
+			linear-gradient(135deg, var(--tir-h) 25%, transparent 25%),
+			linear-gradient(45deg, transparent 75%, var(--tir-s) 100%),
+			linear-gradient(135deg, transparent 75%, var(--tir-s) 100%);
+
+		background-position: 0 0, 50px 20px, 50px -50px, 0px 70px;
+		background-size: 100px 80px;
+		/*100px*/
+		color: whitesmoke;
+		text-align: center;
+		font-family: monospace;
+	}
+</style>
